@@ -10,3 +10,19 @@ Text Domain: twentytwentyone-child
 */
 
 /* Add your custom CSS below this line */
+/* Site-wide paragraph size requested for editable content. */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+h1,h2,h3,h4,h5,h6{
+	font-family: "Open Sans", sans-serif !important;
+	font-weight: 700 !important;
+}
+
+body p {
+	font-size: 15px !important;
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	line-height: 1.4;
+	color: #464646;
+}
