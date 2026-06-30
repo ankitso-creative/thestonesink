@@ -1,0 +1,235 @@
+body,
+.ssc-header,
+.ssc-home,
+.ssc-footer {
+	font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, Arial, Helvetica, 'Helvetica Neue', Verdana, sans-serif;
+}
+
+.site-footer.ssc-footer,
+.ssc-footer {
+	background: #fff;
+	color: #4f6575;
+	font-family: inherit;
+	margin-left: calc(50% - 50vw) !important;
+	margin-right: calc(50% - 50vw) !important;
+	margin-top: 0 !important;
+	max-width: none !important;
+	padding: 0 !important;
+	width: 100vw !important;
+}
+
+.ssc-footer-top {
+	background: #e4e5e6;
+	padding: 28px 35px 42px;
+	width: 100%;
+}
+
+.ssc-footer-grid {
+	display: grid;
+	gap: 30px;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	margin: 0;
+	max-width: none;
+	width: 100%;
+}
+
+.ssc-footer-column h2 {
+	border-bottom: 2px solid #596977;
+	color: #4d6272;
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 0.02em;
+	line-height: 1.2;
+	margin: 0 0 14px;
+	padding: 0 0 11px;
+	text-transform: uppercase;
+}
+
+.ssc-footer-links,
+.ssc-payment-badges {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.ssc-footer-links li {
+	line-height: 1.35;
+	margin: 0 0 10px;
+}
+
+.ssc-footer-links a,
+.ssc-security p {
+	color: #4f6575;
+	font-size: 16px;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.ssc-footer-links a:hover,
+.ssc-footer-links a:focus-visible {
+	color: #1f2d36;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+.ssc-security p {
+	margin: 0 0 18px;
+}
+
+.ssc-payment-badges {
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 12px;
+}
+
+.ssc-payment-badges li {
+	align-items: center;
+	background: #fff;
+	border-radius: 3px;
+	color: #111;
+	display: inline-flex;
+	flex: 0 0 78px;
+	font-size: 12px;
+	font-weight: 800;
+	height: 48px;
+	justify-content: center;
+	letter-spacing: -0.02em;
+	padding: 0 10px;
+	text-transform: none;
+}
+
+.ssc-payment-badges li:nth-child(1),
+.ssc-payment-badges li:nth-child(4),
+.ssc-payment-badges li:nth-child(5) {
+	text-transform: uppercase;
+}
+
+.ssc-payment-badges li:nth-child(3) {
+	border-radius: 6px;
+	font-size: 9px;
+}
+
+.ssc-footer-bottom {
+	background: #fff;
+	border-top: 4px solid #59636a;
+	padding: 34px 24px 25px;
+	text-align: center;
+	width: 100%;
+}
+
+.ssc-footer-brand {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 26px;
+}
+
+.ssc-footer-brand .custom-logo-link,
+.ssc-footer-site-title {
+	align-items: center;
+	border: 2px solid #171717;
+	color: #222;
+	display: inline-flex;
+	font-size: 16px;
+	font-weight: 500;
+	justify-content: center;
+	line-height: 1.2;
+	min-height: 60px;
+	min-width: 212px;
+	padding: 10px 12px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.ssc-footer-brand img.custom-logo {
+	display: block;
+	max-height: 52px;
+	max-width: 190px;
+	object-fit: contain;
+	width: auto;
+}
+
+.ssc-footer-nav {
+	display: flex;
+	justify-content: center;
+}
+
+.ssc-footer-menu {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.ssc-footer-menu li {
+	margin: 0;
+	padding: 0;
+}
+
+.ssc-footer-menu a {
+	color: #354a5b;
+	display: inline-flex;
+	font-size: 15px;
+	font-weight: 500;
+	letter-spacing: 0.04em;
+	line-height: 1.2;
+	padding: 0 10px 6px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.ssc-footer-menu a:hover,
+.ssc-footer-menu a:focus-visible,
+.ssc-footer-menu .current-menu-item > a {
+	color: #111;
+	text-decoration: underline;
+	text-underline-offset: 4px;
+}
+
+@media (max-width: 1199.98px) {
+	.ssc-footer-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.ssc-payment-badges {
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.ssc-footer-top {
+		padding: 24px 18px 30px;
+	}
+
+	.ssc-footer-grid {
+		gap: 26px;
+		grid-template-columns: 1fr;
+	}
+
+	.ssc-footer-column h2 {
+		font-size: 16px;
+	}
+
+	.ssc-footer-links a,
+	.ssc-security p {
+		font-size: 15px;
+	}
+
+	.ssc-payment-badges li {
+		flex-basis: 72px;
+		height: 44px;
+	}
+
+	.ssc-footer-bottom {
+		padding: 28px 16px 22px;
+	}
+
+	.ssc-footer-menu a {
+		font-size: 13px;
+		padding: 0 7px 8px;
+	}
+}

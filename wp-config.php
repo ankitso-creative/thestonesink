@@ -48,6 +48,8 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
+ define('WP_HOME', 'http://192.168.1.18/stonesink');
+define('WP_SITEURL', 'http://192.168.1.18/stonesink');
 define( 'AUTH_KEY',         'mGrtpf1Wgrn&,)<w vU>3T=E=P`~MwG2}ETWzyrt{e o8~^KLPsL%L6F;.HzW?qL' );
 define( 'SECURE_AUTH_KEY',  'xOS]7zIea;F@[sW*~qp%5A[l:zJxr# NL}-Bx7f^ktvF`D4~LaJWW>r5o%goH8le' );
 define( 'LOGGED_IN_KEY',    '? t&j>TSvOc8z.JcE:|?RL0!z%D|@`d|YR x:aGn&_xA_!cR)J.x,x%oD&|HW%_7' );

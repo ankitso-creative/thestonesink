@@ -1,0 +1,331 @@
+body,
+.ssc-header,
+.ssc-footer,
+.ssc-about-page {
+	font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, Arial, Helvetica, 'Helvetica Neue', Verdana, sans-serif;
+}
+
+.ssc-about-page {
+	background: #fff;
+	color: #565656;
+	font-size: 14px;
+	line-height: 1.45;
+	margin-left: calc(50% - 50vw);
+	margin-right: calc(50% - 50vw);
+	padding: 0 0 34px;
+	width: 100vw;
+}
+
+.ssc-about-page *,
+.ssc-about-page *::before,
+.ssc-about-page *::after {
+	box-sizing: border-box;
+}
+
+.ssc-about-page h1,
+.ssc-about-page h2,
+.ssc-about-page p,
+.ssc-about-page ul {
+	letter-spacing: 0;
+	margin-top: 0;
+}
+
+.ssc-about-page__header {
+	padding: 73px 20px 47px;
+	text-align: center;
+}
+
+.ssc-about-page__header h1 {
+	color: #4d4d4d;
+	font-size: 38px;
+	font-weight: 400;
+	line-height: 1.15;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.ssc-about-section {
+	margin: 0 auto;
+	max-width: 100%;
+	padding: 0 20px;
+}
+
+.ssc-about-section > h2 {
+	color: #4f4f4f;
+	font-size: 30px;
+	font-weight: 800;
+	line-height: 1.18;
+	margin: 0 0 22px;
+}
+
+.ssc-about-section--story > h2,
+.ssc-about-section--partners > h2,
+.ssc-about-section--evolution > h2,
+.ssc-about-section--indonesia > h2 {
+	max-width: 1400px;
+}
+
+.ssc-about-figure {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.ssc-about-figure img,
+.ssc-about-placeholder {
+	display: block;
+	max-width: 100%;
+	object-fit: cover;
+	width: 100%;
+}
+
+.ssc-about-figure figcaption {
+	color: #666;
+	font-size: 11px;
+	line-height: 1.3;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.ssc-about-figure--large {
+	max-width: 600px;
+}
+
+.ssc-about-figure--large img,
+.ssc-about-figure--large .ssc-about-placeholder {
+	height: 375px;
+}
+
+.ssc-about-copy {
+	color: #5b5b5b;
+	font-size: 12px;
+	line-height: 1.55;
+	margin: 0 auto;
+	max-width: 1400px;
+}
+
+.ssc-about-copy--narrow {
+	margin-top: 34px;
+	max-width: 980px;
+	text-align: left;
+}
+
+.ssc-about-copy p {
+	margin-bottom: 16px;
+}
+
+.ssc-about-copy p:last-child {
+	margin-bottom: 0;
+}
+
+.ssc-about-thin-nav {
+	border-bottom: 1px solid #a7a7a7;
+	border-top: 1px solid #a7a7a7;
+	margin: 30px -20px 0;
+	padding: 0 10px;
+}
+
+.ssc-about-thin-menu {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style: none;
+	margin: 0 auto;
+	max-width: 1400px;
+	padding: 7px 0;
+}
+
+.ssc-about-thin-menu li {
+	margin: 0;
+}
+
+.ssc-about-thin-menu a {
+	color: #4f5d69;
+	display: block;
+	font-size: 11px;
+	line-height: 1;
+	padding: 3px 13px;
+	text-decoration: none;
+}
+
+.ssc-about-section--partners {
+	padding-top: 30px;
+}
+
+.ssc-about-figure--small {
+	max-width: 250px;
+}
+
+.ssc-about-figure--small img,
+.ssc-about-figure--small .ssc-about-placeholder {
+	height: 152px;
+}
+
+.ssc-about-section--partners > h2 {
+	font-size: 31px;
+	margin: 44px 0 18px;
+}
+
+.ssc-about-list {
+	color: #555;
+	font-size: 12px;
+	line-height: 1.55;
+	list-style-position: outside;
+	margin: 0 auto 28px;
+	max-width: 1400px;
+	padding-left: 17px;
+}
+
+.ssc-about-list li {
+	margin-bottom: 8px;
+}
+
+.ssc-about-figure--medium {
+	max-width: 456px;
+}
+
+.ssc-about-figure--medium img,
+.ssc-about-figure--medium .ssc-about-placeholder {
+	height: 217px;
+}
+
+.ssc-about-section--evolution {
+	padding-top: 58px;
+}
+
+.ssc-about-section--evolution > h2,
+.ssc-about-section--indonesia > h2 {
+	font-size: 31px;
+	margin-bottom: 22px;
+}
+
+.ssc-about-section--indonesia {
+	padding-top: 38px;
+}
+
+.ssc-about-figure--wide {
+	max-width: 860px;
+}
+
+.ssc-about-figure--wide img,
+.ssc-about-figure--wide .ssc-about-placeholder {
+	height: 536px;
+}
+
+.ssc-about-section--indonesia .ssc-about-copy {
+	margin-top: 62px;
+}
+
+.ssc-about-figure--portrait {
+	margin-top: 42px;
+	max-width: 160px;
+}
+
+.ssc-about-figure--portrait img,
+.ssc-about-figure--portrait .ssc-about-placeholder {
+	height: 250px;
+}
+
+.ssc-about-figure--final {
+	margin-top: 70px;
+}
+
+.ssc-about-placeholder {
+	background-color: #d8d8d8;
+	background-position: center;
+	background-size: cover;
+}
+
+.ssc-about-placeholder--boat {
+	background-image: linear-gradient(145deg, rgba(0, 121, 171, .9), rgba(8, 151, 190, .7) 45%, rgba(244, 115, 38, .9) 46%, rgba(244, 115, 38, .9) 72%, rgba(250, 185, 44, .95));
+}
+
+.ssc-about-placeholder--wave {
+	background-image: linear-gradient(135deg, #ededed, #919191 50%, #323232);
+}
+
+.ssc-about-placeholder--people {
+	background-image: linear-gradient(90deg, #2c2c2c 0 49%, #c74232 49% 52%, #ebd6bf 52% 100%);
+}
+
+.ssc-about-placeholder--beach {
+	background-image: linear-gradient(180deg, #1f8fd1 0 45%, #f4f1df 45% 72%, #d7bd8b 72% 100%);
+}
+
+.ssc-about-placeholder--workers {
+	background-image: linear-gradient(90deg, #776444, #b09b64 44%, #dfd4b9 44% 100%);
+}
+
+.ssc-about-placeholder--workshop {
+	background-image: linear-gradient(150deg, #b8894f, #7a4d27 42%, #d7b17e 43%, #5e442e 100%);
+}
+
+@media (max-width: 991px) {
+	.ssc-about-page__header {
+		padding: 54px 18px 34px;
+	}
+
+	.ssc-about-page__header h1 {
+		font-size: 32px;
+	}
+
+	.ssc-about-section > h2,
+	.ssc-about-section--partners > h2,
+	.ssc-about-section--evolution > h2,
+	.ssc-about-section--indonesia > h2 {
+		font-size: 26px;
+	}
+
+	.ssc-about-figure--large img,
+	.ssc-about-figure--large .ssc-about-placeholder {
+		height: 310px;
+	}
+
+	.ssc-about-figure--wide img,
+	.ssc-about-figure--wide .ssc-about-placeholder {
+		height: 420px;
+	}
+}
+
+@media (max-width: 767px) {
+	.ssc-about-page {
+		font-size: 13px;
+	}
+
+	.ssc-about-page__header {
+		padding-top: 38px;
+	}
+
+	.ssc-about-page__header h1 {
+		font-size: 28px;
+	}
+
+	.ssc-about-section {
+		padding-left: 14px;
+		padding-right: 14px;
+	}
+
+	.ssc-about-section > h2,
+	.ssc-about-section--partners > h2,
+	.ssc-about-section--evolution > h2,
+	.ssc-about-section--indonesia > h2 {
+		font-size: 23px;
+	}
+
+	.ssc-about-figure--large img,
+	.ssc-about-figure--large .ssc-about-placeholder,
+	.ssc-about-figure--wide img,
+	.ssc-about-figure--wide .ssc-about-placeholder {
+		height: auto;
+		min-height: 235px;
+	}
+
+	.ssc-about-copy--narrow,
+	.ssc-about-section--indonesia .ssc-about-copy {
+		margin-top: 28px;
+	}
+
+	.ssc-about-figure--final {
+		margin-top: 42px;
+	}
+}
