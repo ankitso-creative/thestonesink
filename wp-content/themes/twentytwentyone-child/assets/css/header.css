@@ -105,13 +105,13 @@ body,
 }
 
 .ssc-mainbar {
-	align-items: center;
-	border-bottom: 1px solid #4c4c4c;
-	display: flex;
-	gap: 22px;
-	justify-content: space-between;
-	min-height: 116px;
-	padding: 14px 14px 14px 22px;
+    align-items: center;
+    border-bottom: 1px solid #4c4c4c;
+    display: flex;
+    gap: 22px;
+    justify-content: space-between;
+    min-height: 116px;
+    padding: 7px 14px 7px 22px;
 }
 
 .ssc-brand-box {
@@ -133,7 +133,7 @@ body,
 	letter-spacing: 0.02em;
 	line-height: 1.2;
 	min-height: 86px;
-	min-width: 420px;
+	min-width: 325px;
 	padding: 0;
 	text-align: center;
 	text-decoration: none;
@@ -142,7 +142,7 @@ body,
 
 .ssc-brand-box img.custom-logo {
 	display: block;
-	max-height: 92px;
+	max-height: 97px;
 	max-width: 420px;
 	object-fit: contain;
 	width: auto;
@@ -482,13 +482,13 @@ body,
 		font-size: 15px;
 		min-height: 58px;
 		min-width: 0;
-		padding: 0;
-		width: min(100%, 320px);
+		padding: 10px 12px;
+		width: min(100%, 250px);
 	}
 
 	.ssc-brand-box img.custom-logo {
-		max-height: 58px;
-		max-width: 320px;
+		max-height: 50px;
+		max-width: 220px;
 	}
 
 	.ssc-search-form {

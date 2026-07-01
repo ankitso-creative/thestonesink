@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * The child theme header.
  *
@@ -112,18 +112,22 @@ if ( function_exists( 'WC' ) && WC()->cart ) {
 		</div>
 
 		<nav class="ssc-primary-nav d-none d-lg-block" aria-label="<?php esc_attr_e( 'Primary menu', 'twentytwentyone-child' ); ?>">
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'primary',
-					'menu_class'     => 'navbar-nav ssc-menu',
-					'container'      => false,
-					'fallback_cb'    => false,
-					'depth'          => 3,
-					'walker'         => new TwentyTwentyOne_Child_Bootstrap_Nav_Walker(),
-				)
-			);
-			?>
+			<?php if ( has_nav_menu( 'primary' ) ) : ?>
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'primary',
+						'menu_class'     => 'navbar-nav ssc-menu',
+						'container'      => false,
+						'fallback_cb'    => false,
+						'depth'          => 3,
+						'walker'         => new TwentyTwentyOne_Child_Bootstrap_Nav_Walker(),
+					)
+				);
+				?>
+			<?php elseif ( function_exists( 'twentytwentyone_child_product_category_nav' ) ) : ?>
+				<?php twentytwentyone_child_product_category_nav( 'navbar-nav ssc-menu' ); ?>
+			<?php endif; ?>
 		</nav>
 	</header>
 
@@ -133,18 +137,22 @@ if ( function_exists( 'WC' ) && WC()->cart ) {
 			<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="<?php esc_attr_e( 'Close menu', 'twentytwentyone-child' ); ?>"></button>
 		</div>
 		<div class="offcanvas-body">
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'primary',
-					'menu_class'     => 'navbar-nav ssc-mobile-menu',
-					'container'      => false,
-					'fallback_cb'    => false,
-					'depth'          => 3,
-					'walker'         => new TwentyTwentyOne_Child_Bootstrap_Nav_Walker(),
-				)
-			);
-			?>
+			<?php if ( has_nav_menu( 'primary' ) ) : ?>
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'primary',
+						'menu_class'     => 'navbar-nav ssc-mobile-menu',
+						'container'      => false,
+						'fallback_cb'    => false,
+						'depth'          => 3,
+						'walker'         => new TwentyTwentyOne_Child_Bootstrap_Nav_Walker(),
+					)
+				);
+				?>
+			<?php elseif ( function_exists( 'twentytwentyone_child_product_category_nav' ) ) : ?>
+				<?php twentytwentyone_child_product_category_nav( 'navbar-nav ssc-mobile-menu' ); ?>
+			<?php endif; ?>
 		</div>
 	</div>
 

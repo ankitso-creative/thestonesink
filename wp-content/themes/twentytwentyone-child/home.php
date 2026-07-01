@@ -2,9 +2,6 @@
 /**
  * Homepage template for the Twenty Twenty-One child theme.
  *
- * Uses ACF fields when available, with fallback content so the page renders
- * before the fields are completed in WordPress admin.
- *
  * @package Twenty_Twenty_One_Child
  */
 
@@ -58,12 +55,13 @@ if ( ! function_exists( 'ssc_home_image_url' ) ) {
 		}
 
 		if ( is_numeric( $image ) ) {
-			return wp_get_attachment_image_url( (int) $image, 'large' );
+			return (string) wp_get_attachment_image_url( (int) $image, 'large' );
 		}
 
 		return is_string( $image ) ? $image : '';
 	}
 }
+
 if ( ! function_exists( 'ssc_home_first_product_image' ) ) {
 	/**
 	 * Get the first available product image, optionally from a product category.
@@ -101,7 +99,7 @@ if ( ! function_exists( 'ssc_home_first_product_image' ) ) {
 
 if ( ! function_exists( 'ssc_home_category_fallback' ) ) {
 	/**
-	 * Resolve category card URL and image from WooCommerce when ACF is empty.
+	 * Resolve category card URL and image from WooCommerce.
 	 *
 	 * @param string $slug Product category slug.
 	 * @return array
@@ -155,7 +153,7 @@ $category_defaults = array(
 	array( 'Stone Bathroom Basins & Basin Sink Collection UK', 'stone-bathroom-basins-basin-sink-collection-uk' ),
 	array( 'Bowl Sinks', 'bowl-sinks' ),
 	array( 'Rectangular Sinks', 'rectangular-sinks' ),
-	array( 'Petrified Wood Sinks', 'petrified-wood-sinks' ),
+	array( 'Petrified Wood Sinks', 'petrified-wood-sink' ),
 	array( 'Pedestal Sinks', 'pedestal-sinks' ),
 	array( 'Zen Sinks', 'zen-sinks' ),
 	array( 'Wooden Vanity Units for Stylish Bathrooms', 'wooden-vanity-units' ),
@@ -195,7 +193,7 @@ $faq_defaults = array(
 	<section class="ssc-home-intro">
 		<h2><?php echo esc_html( ssc_home_field( 'ssc_home_intro_title', 'We are The Stone Sink Company.' ) ); ?></h2>
 		<div class="ssc-home-copy">
-			<?php echo wp_kses_post( wpautop( ssc_home_field( 'ssc_home_intro_text', 'The Stone Sink Company was started by James Tatham, our Managing Director. After years of extensive travels through Indonesia, James formed a relationship with an Indonesian partner Ã¢â‚¬â€œ a strong friendship and business partnership were forged.  We launched from small beginnings, working closely with our Indonesian partner to bring some of the stunning items we saw to the UK. We launched a range of beautiful stone bathroom sinks, stunning reclaimed wooden vanity units and sell reclaimed teak furniture for the entire home via Ombak Furniture.  If youÃ¢â‚¬â„¢re looking for a beautiful sink from stone, we have a wide selection for you Ã¢â‚¬â€œ all handmade in Indonesia, with traceable origin.  Large UK stock is carried, and we offer immediate free UK delivery. The Stone Sink Company also send out stone sinks all over the world Ã¢â‚¬â€œ international delivery to any country is possible. We are proud of what we do. We try to provide beautiful products, sourced the right way, give customer service and be the best we can be! We still have very strong relationships with Indonesia, and we are still working with the same Indonesian partners.' ) ) ); ?>
+			<?php echo wp_kses_post( wpautop( ssc_home_field( 'ssc_home_intro_text', 'We specialise in natural stone bathroom sinks, basins, and vanity pieces.' ) ) ); ?>
 		</div>
 	</section>
 
@@ -214,7 +212,6 @@ $faq_defaults = array(
 			?>
 		</nav>
 	<?php endif; ?>
-
 
 	<section class="ssc-home-categories" aria-labelledby="ssc-home-categories-title">
 		<h2 id="ssc-home-categories-title"><?php echo esc_html( ssc_home_field( 'ssc_home_categories_title', 'Stone Sink Categories' ) ); ?></h2>
